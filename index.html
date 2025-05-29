@@ -7,7 +7,7 @@
 </head>
 <body class="font-mono">
 
-    <div class="container w-[600px] mx-auto">
+    <div class="container w-[400px] mx-auto">
         <div class="border-b-2 border-gray-500 pb-5 pt-5">
          <h2 class="text-3xl text-center uppercase text-gray-700">Song Lists</h2>
         </div>
@@ -16,11 +16,14 @@
             
             <h3 class="text-xl uppercase mb-5 mt-5 text-gray-700">Add Song details:</h3>
             <div class="">
-                <input class="mb-5 bg-gray-50 border border-sky-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" type="text" placeholder="Artist First Name" id="first_name">
-                <input class="mb-5 bg-gry-300 border border-sky-300 text-gray-900 text-sm rounded-lg w-full p-2.5 block" type="text" id="Last_Name" placeholder="Artist Last Name">
-                <input class="mb-5 bg-gray-50 border border-sky-300 text-sm block w-full p-2.5 rounded-lg" type="text" placeholder="Music Title">
-                <input class="mb-5 bg-gray-50 border border-sky-300 w-full p-2.5 rounded-lg text-sm" type="text" placeholder="Published Year">
-                <input class="bg-blue-500 text-white px-4 py-2 text-center font-medium rounded-lg cursor-pointer hover:bg-blue-900 transition duration-500" type="submit" value="Submit">
+                <form id="input-fields">
+                    <input class="mb-5 bg-gray-50 border border-sky-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" type="text" placeholder="Artist First Name" id="first_name">
+                    <input class="mb-5 bg-gry-300 border border-sky-300 text-gray-900 text-sm rounded-lg w-full p-2.5 block" type="text" id="Last_Name" placeholder="Artist Last Name">
+                    <input class="mb-5 bg-gray-50 border border-sky-300 text-sm block w-full p-2.5 rounded-lg" type="text" placeholder="Music Title" id="musc_title">
+                    <input class="mb-5 bg-gray-50 border border-sky-300 w-full p-2.5 rounded-lg text-sm" type="text" placeholder="Published Year" id="year_publsihed">
+                    <input class="bg-blue-500 text-white px-4 py-2 text-center font-medium rounded-lg cursor-pointer hover:bg-blue-900 transition duration-500" type="submit" value="Submit">                 
+                </form>
+               
             </div>
          </div>
         <!--Table Body-->
@@ -33,8 +36,8 @@
                         <th class="px-2 py-1.5">Year</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="bg-white border-b border-gray-200 text-sm">
+                <tbody id="body_area">
+                    <!-- <tr class="bg-white border-b border-gray-200 text-sm">
                         <td class="px-2 py-1.5">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
                         <td class="px-2 py-1.5">Malcolm Lockyer</td>
                         <td class="px-2 py-1.5">1961</td>
@@ -48,7 +51,7 @@
                         <td class="px-2 py-1.5">Shining Star</td>
                         <td class="px-2 py-1.5">Earth, Wind, and Fire</td>
                         <td class="px-2 py-1.5">1975</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
